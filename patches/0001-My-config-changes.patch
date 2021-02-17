@@ -1,0 +1,59 @@
+From 308d42cf7d1c46102fc61e3fbddba7573a4dd8de Mon Sep 17 00:00:00 2001
+From: Theseas Maroulis <theseas.work+github@gmail.com>
+Date: Wed, 17 Feb 2021 23:01:40 +0200
+Subject: [PATCH] =?UTF-8?q?My=20config=20changes.=20=09=CF=84=CF=81=CE=BF?=
+ =?UTF-8?q?=CF=80=CE=BF=CF=80=CE=BF=CE=AF=CE=B7=CF=83=CE=B7:=20=20=20=20?=
+ =?UTF-8?q?=20config.def.h?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ config.def.h | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index baf8706..1a264fd 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "Liberation Mono:pixelsize=25:antialias=true:autohint=true";
+ static int borderpx = 2;
+ 
+ /*
+@@ -16,7 +16,7 @@ static int borderpx = 2;
+  * 4: value of shell in /etc/passwd
+  * 5: value of shell in config.h
+  */
+-static char *shell = "/bin/sh";
++static char *shell = "/bin/bash";
+ char *utmp = NULL;
+ /* scroll program: to enable use a string like "scroll" */
+ char *scroll = NULL;
+@@ -71,7 +71,7 @@ static unsigned int cursorthickness = 2;
+  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
+  * it
+  */
+-static int bellvolume = 0;
++static int bellvolume = 1;
+ 
+ /* default TERM value */
+ char *termname = "st-256color";
+@@ -145,8 +145,8 @@ static unsigned int cursorshape = 2;
+  * Default columns and rows numbers
+  */
+ 
+-static unsigned int cols = 80;
+-static unsigned int rows = 24;
++static unsigned int cols = 120;
++static unsigned int rows = 32;
+ 
+ /*
+  * Default colour and shape of the mouse cursor
+-- 
+2.26.2
+
